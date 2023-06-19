@@ -34,9 +34,10 @@ public class DestroyCubeController : MonoBehaviour
             
         }
 
-        void OnCollisionEnter(Collision other)
-        {
-            Destroy(other.gameObject);
-        }
+       
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
     }
 }
